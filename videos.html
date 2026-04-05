@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos — Policy Debate Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">⚖ PolicyDebate</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="videos.html" class="active">Videos</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="videos.html">Videos</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Watch & Learn</div>
+      <h1>Videos</h1>
+      <p>Round recordings, tutorials, flow breakdowns, and coaching sessions from top competitors and coaches.</p>
+    </div>
+  </section>
+
+  <!-- VIDEO FILTERS -->
+  <section class="section videos-section">
+    <div class="container">
+
+      <div class="filter-tabs" id="filterTabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="round">Round Videos</button>
+        <button class="tab" data-filter="tutorial">Tutorials</button>
+        <button class="tab" data-filter="coaching">Coaching</button>
+      </div>
+
+      <div class="video-grid" id="videoGrid">
+
+        <!-- ROUND VIDEOS — using YouTube embed (replace video IDs with your own) -->
+        <div class="video-card" data-category="round">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="National Championship Final Round"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge round">Round</div>
+            <h3>National Championship — Final Round 2024</h3>
+            <p>Full round with flow annotations. Affirmative runs a troop withdrawal aff; negative responds with deterrence DA and a NATO CP.</p>
+            <div class="video-meta">
+              <span>⏱ 1h 42m</span>
+              <span>👁 12,400 views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="round">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="TOC Quarterfinals"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge round">Round</div>
+            <h3>TOC Quarterfinals — Kritik vs. Policy Round</h3>
+            <p>A clash between a security kritik negative strategy and a traditional policy affirmative. Great example of framework debate.</p>
+            <div class="video-meta">
+              <span>⏱ 1h 28m</span>
+              <span>👁 8,900 views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="round">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Novice Final Round"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge round">Round</div>
+            <h3>Novice Final — Lincoln-Douglas Regional 2024</h3>
+            <p>Perfect for beginners — a clean, well-structured round with clear evidence use and cross-examination technique.</p>
+            <div class="video-meta">
+              <span>⏱ 58m</span>
+              <span>👁 4,200 views</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TUTORIALS -->
+        <div class="video-card" data-category="tutorial">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="How to Flow"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge tutorial">Tutorial</div>
+            <h3>How to Flow: Beginner to Advanced</h3>
+            <p>Learn the art of flowing — notations, shorthand symbols, how to keep up with speed, and how to use your flow in rebuttals.</p>
+            <div class="video-meta">
+              <span>⏱ 28m</span>
+              <span>👁 31,000 views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="tutorial">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Cutting Cards"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge tutorial">Tutorial</div>
+            <h3>Cutting Cards with Verbatim</h3>
+            <p>A full walkthrough of using the Verbatim plugin to format evidence cards, write tags, and build blocks efficiently.</p>
+            <div class="video-meta">
+              <span>⏱ 35m</span>
+              <span>👁 19,500 views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="tutorial">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Running Disadvantages"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge tutorial">Tutorial</div>
+            <h3>Running and Extending Disadvantages</h3>
+            <p>How to build a disadvantage, present it in the 1NC, and extend it through the 2NR. Includes uniqueness, link, and impact strategy.</p>
+            <div class="video-meta">
+              <span>⏱ 41m</span>
+              <span>👁 14,700 views</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COACHING -->
+        <div class="video-card" data-category="coaching">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Cross-Ex Mastery"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge coaching">Coaching</div>
+            <h3>Cross-Examination Mastery with Coach Rivera</h3>
+            <p>Coach Rivera breaks down questioning strategy, how to expose weaknesses in evidence, and how to stay composed under pressure.</p>
+            <div class="video-meta">
+              <span>⏱ 52m</span>
+              <span>👁 9,300 views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card" data-category="coaching">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="2AR Strategy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-info">
+            <div class="video-badge coaching">Coaching</div>
+            <h3>2AR Collapse Strategy Clinic</h3>
+            <p>How to strategically collapse in the 2AR, choose your best offense, and frame the round for the judge in the final 5 minutes.</p>
+            <div class="video-meta">
+              <span>⏱ 47m</span>
+              <span>👁 11,200 views</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT A VIDEO -->
+  <section class="section submit-section">
+    <div class="container submit-inner">
+      <div class="section-label">Community</div>
+      <h2>Submit Your Round</h2>
+      <p>Did you film a great round at a recent tournament? We accept community submissions for round videos, tutorials, and lectures. Help other debaters learn from your experience.</p>
+      <a href="mailto:submit@policydebatehub.com" class="btn-primary">Submit a Video</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">⚖ PolicyDebate</span>
+        <p>Helping debaters research smarter and argue better.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="videos.html">Videos</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PolicyDebate Hub. Built for competitors, by competitors.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
